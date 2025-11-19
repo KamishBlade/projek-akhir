@@ -26,4 +26,14 @@ class PageController extends Controller
     {
         return view('social');
     }
+
+    public function map(): View
+    {
+        return view('map');
+    }
+
+     public function exhibitors(): View
+    {
+        return view('exhibitors');
+    }
 }

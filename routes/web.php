@@ -20,6 +20,10 @@ Route::get('/event', [PageController::class, 'event'])->name('event');
 // BARU: Halaman Sosial menggunakan controller
 Route::get('/social', [PageController::class, 'social'])->name('social');
 
+// BARU: Halaman Sosial menggunakan controller
+Route::get('/map', [PageController::class, 'map'])->name('map');
+Route::get('/exhibitors', [PageController::class, 'exhibitors'])->name('exhibitors');
+
 // Jika ingin tetap menambahkan route /dashboard juga, bisa:
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -77,8 +77,16 @@
                 </a>
 
                 {{-- Link Lainnya --}}
-                <a href="#" class="hover:text-blue-600">Map</a>
-                <a href="#" class="hover:text-blue-600">Exhibitors</a>
+                
+                <a href="{{ route('map') }}"
+                   class="hover:text-blue-600 {{ request()->routeIs('map') ? 'text-blue-600 font-bold' : '' }}">
+                    Map
+                </a>
+
+                <a href="{{ route('exhibitors') }}"
+                   class="hover:text-blue-600 {{ request()->routeIs('exhibitors') ? 'text-blue-600 font-bold' : '' }}">
+                    Exhibitors
+                </a>
                 <a href="#" class="hover:text-blue-600">Merchandise</a>
             </nav>
         </div>
