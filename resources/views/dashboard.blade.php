@@ -12,7 +12,7 @@
     <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
         <div class="text-center">
             <h1 class="text-white text-4xl md:text-6xl font-extrabold drop-shadow-lg">
-                TOKYO GAME SHOW 2025
+                TOKYO GAME SHOW 2026
             </h1>
             <p class="text-white text-xl mt-3">Unlimited, Neverending Playgrounds</p>
         </div>
