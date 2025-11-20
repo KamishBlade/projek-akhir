@@ -39,8 +39,14 @@
                            Official Social Media
                         </a> /
 
-                        <a href="#" class="hover:text-blue-600">News</a> /
-                        <a href="#" class="hover:text-blue-600">For Business</a> /
+                         <a href="{{ route('news') }}"
+                           class="hover:text-blue-600 {{ request()->routeIs('news') ? 'text-blue-600 font-bold' : '' }}">
+                           News
+                        </a> /
+                        <a href="{{ route('business') }}"
+                           class="hover:text-blue-600 {{ request()->routeIs('business') ? 'text-blue-600 font-bold' : '' }}">
+                           Business
+                        </a> /
                         <a href="#" class="hover:text-blue-600">For Overseas</a> /
                         <a href="#" class="hover:text-blue-600">Press</a>
                     </nav>
@@ -76,18 +82,22 @@
                     Event Stage
                 </a>
 
-                {{-- Link Lainnya --}}
-                
+                {{-- Link Event Map --}}
                 <a href="{{ route('map') }}"
                    class="hover:text-blue-600 {{ request()->routeIs('map') ? 'text-blue-600 font-bold' : '' }}">
                     Map
                 </a>
 
+                {{-- Link Event Pameran --}}
                 <a href="{{ route('exhibitors') }}"
                    class="hover:text-blue-600 {{ request()->routeIs('exhibitors') ? 'text-blue-600 font-bold' : '' }}">
                     Exhibitors
                 </a>
-                <a href="#" class="hover:text-blue-600">Merchandise</a>
+
+                <a href="{{ route('merchandise') }}"
+                   class="hover:text-blue-600 {{ request()->routeIs('merchandise') ? 'text-blue-600 font-bold' : '' }}">
+                    Merchandise
+                </a>
             </nav>
         </div>
 

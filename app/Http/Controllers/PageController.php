@@ -36,4 +36,19 @@ class PageController extends Controller
     {
         return view('exhibitors');
     }
+
+    public function merchandise(): View
+    {
+        return view('merchandise');
+    }
+
+    public function news(): View
+    {
+        return view('news');
+    }
+
+    public function business(): View
+    {
+        return view('business');
+    }
 }

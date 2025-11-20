@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 {{-- Judul Halaman --}}
-@section('title', 'Official Social Media')
+@section('title', 'News')
 
 @section('content')
 

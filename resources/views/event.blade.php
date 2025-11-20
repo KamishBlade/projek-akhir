@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Stage - TGS Style</title>
+@extends('layouts.main')
+
+@section('title', 'Event Stage') {{-- Mengubah title menjadi lebih sesuai --}}
+
+@section('content')
+
+{{-- Menghapus <!DOCTYPE html>, <html>, <head>, <body> dari sini --}}
+
+    {{-- Script dan Style Kustom tetap di awal (atau pindahkan ke layout jika bisa) --}}
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom Font jika diperlukan */
+        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; }
 
@@ -19,8 +22,7 @@
             background-position: center;
         }
     </style>
-</head>
-<body class="bg-white text-gray-800">
+{{-- <body class="bg-white text-gray-800"> dihapus --}}
 
     {{-- DATA DUMMY UNTUK SIMULASI (Biasanya ini dari Controller) --}}
     @php
@@ -81,21 +83,6 @@
             ]
         ];
     @endphp
-
-    {{-- NAVBAR HEADER (Sederhana) --}}
-    <header class="bg-white border-b py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="font-bold text-2xl tracking-tighter">TGS <span class="text-xs font-normal block">TOKYO GAME SHOW</span></div>
-            <nav class="hidden md:flex space-x-6 text-sm font-bold text-gray-600">
-                <a href="#" class="hover:text-blue-600">Overview</a>
-                <a href="#" class="hover:text-blue-600">Tickets</a>
-                <a href="#" class="text-blue-600 border-b-2 border-blue-600">Event Stage</a>
-                <a href="#" class="hover:text-blue-600">Official Program</a>
-                <a href="#" class="hover:text-blue-600">Exhibitor List</a>
-            </nav>
-            <div class="md:hidden">Menu</div> {{-- Mobile placeholder --}}
-        </div>
-    </header>
 
     {{-- HERO SECTION --}}
     <section class="hero-bg relative h-64 flex flex-col justify-center items-center text-center px-4">
@@ -186,5 +173,5 @@
         <p>&copy; 2025 Event Organizer. All rights reserved.</p>
     </footer>
 
-</body>
-</html>
+{{-- </body></html> dihapus --}}
+@endsection
