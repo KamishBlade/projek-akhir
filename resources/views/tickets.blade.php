@@ -17,75 +17,75 @@
 
     {{-- 2. Kotak Pemberitahuan --}}
     <div class="ticket-notice-box">
-        <h3>Notices of Ticket Purchase</h3>
-        <p>Public Day and Business Day have different purchase methods. Please check and proceed with your purchase.</p>
+        <h3>Pemberitahuan Pembelian Tiket</h3>
+        <p>Hari Umum dan Hari Bisnis memiliki metode pembelian yang berbeda. Mohon periksa dan lanjutkan pembelian Anda.</p>
         <div class="notice-links">
-            <a href="#">Ticket types</a>
-            <a href="#">Ticket Purchase Sites</a>
-            <a href="#">For overseas</a>
-            <a href="#">Notices</a>
+            <a href="#">Jenis Tiket</a>
+            <a href="#">Situs Pembelian Tiket</a>
+            <a href="#">Untuk Luar Negeri</a>
+            <a href="#">Pemberitahuan</a>
         </div>
     </div>
 
-    {{-- 3. Gambar Banner (Opsional, bisa dihapus) --}}
+    {{-- 3. Gambar Banner --}}
      <img src="{{ asset('images/tgs-ticket-banner.jpg') }}" class="w-full h-[500px] object-cover"
-         onerror="this.src='https://placehold.co/1200x500/333/FFF?text=Tokyo+Game+Show+2025'">
+          onerror="this.src='https://placehold.co/1200x500/333/FFF?text=Tokyo+Game+Show+2025'">
 
-    {{-- 4. Header "Ticket types" --}}
+    {{-- 4. Header "Jenis Tiket" --}}
     <div class="ticket-type-header">
-        <h2>Ticket types</h2>
+        <h2>Jenis Tiket</h2>
     </div>
 
     {{-- 5. Grid Daftar Tiket --}}
     <div class="ticket-grid">
 
-        {{-- Tiket 1: 1-day admission --}}
+        {{-- Tiket 1: Tiket masuk 1 hari --}}
         <div class="ticket-item">
-            <h3>1-day admission tickets (junior high school students and older only)</h3>
+            <h3>Tiket masuk 1 hari (khusus siswa SMP ke atas)</h3>
             <hr>
             <div class="ticket-price">
-                <span>3,000 yen</span>
-                <small>(tax included) for each day</small>
+                <span>3.000 yen</span>
+                <small>(termasuk pajak) per hari</small>
             </div>
-            <p>Tickets will go on sale from: July 12 (Sat) 12:00pm</p>
+            <p>Tiket akan mulai dijual dari: 12 Juli (Sabtu) 12:00</p>
             <ul class="ticket-notes">
-                <li>※ Free admission for elementary school students and younger.</li>
-                <li>※ Sales will end as soon as the planned number of tickets is reached.</li>
+                <li>※ Masuk gratis untuk siswa SD ke bawah.</li>
+                <li>※ Penjualan akan berakhir segera setelah jumlah tiket yang direncanakan habis.</li>
             </ul>
         </div>
 
-        {{-- Tiket 2: Fast Tickets --}}
+        {{-- Tiket 2: Tiket Fast / Prioritas --}}
         <div class="ticket-item">
-            <h3>Fast Tickets</h3>
+            <h3>Tiket Fast (Prioritas)</h3>
             <hr>
             <div class="ticket-price">
-                <span>6,000 yen</span>
-                <small>(tax included) for each day</small>
+                <span>6.000 yen</span>
+                <small>(termasuk pajak) per hari</small>
             </div>
-            <p>Lottery Period: July 12 (Sat) 12:00 - July 21 (Mon) 23:59</p>
+            <p>Periode Undian: 12 Juli (Sabtu) 12:00 - 21 Juli (Senin) 23:59</p>
             <ul class="ticket-notes">
-                <li>※ Lottery sales only.</li>
-                <li>※ After the initial sales period ends, additional tickets may be made available on a first-come, first-served basis for customers who were not selected in the lottery. Please check the ticketing website for further details.</li>
-                <li>※ With a special item (the design is different on September 27th and 28th".</li>
-                <li>※ Reservations are limited to 2 tickets per person for each admission day (one application for each day, maximum 2 tickets can be reserved for each day).</li>
+                <li>※ Hanya penjualan undian.</li>
+                <li>※ Setelah periode penjualan awal berakhir, tiket tambahan mungkin tersedia dengan sistem siapa cepat dia dapat bagi pelanggan yang tidak terpilih dalam undian. Silakan cek situs web tiket untuk rincian lebih lanjut.</li>
+                <li>※ Termasuk item spesial (desain berbeda pada tanggal 27 dan 28 September).</li>
+                <li>※ Reservasi dibatasi 2 tiket per orang untuk setiap hari masuk (satu aplikasi untuk setiap hari, maksimal 2 tiket dapat dipesan untuk setiap hari).</li>
             </ul>
         </div>
     </div>
 
-    {{-- 6. Header Special Tickets --}}
-    <h2 class="special-tickets-header">Special Tickets</h2>
+    {{-- 6. Header Tiket Khusus --}}
+    <h2 class="special-tickets-header">Tiket Khusus</h2>
     <div class="ticket-item">
-        <h3>Special Tickets</h3>
+        <h3>Tiket Khusus</h3>
         <hr>
         <div class="ticket-price">
-            <span>1,500 yen</span>
-            <small>(tax included)</small>
+            <span>1.500 yen</span>
+            <small>(termasuk pajak)</small>
         </div>
-        <p>Tickets will go on sale from Agt. 8 (Fri) 1:00pm</p>
+        <p>Tiket akan mulai dijual dari 8 Agt (Jumat) 13:00</p>
         <ul class="ticket-notes">
-            <li>※ Tickets are available only through advance sales on Ticket Pia. There will be no tickets sold on the day of the event, so please make sure to purchase them in advance.</li>
-            <li>※ On the day of the planned event, please bring your issued Special Ticket and line up at the Special Ticket Counter (in front of the Central Entrance).</li>
-            <li>※ On the day of the event, you must present (in original form) one of the following certificates. Those who present one of the following identification cards: Disability Certificate, War Injury Certificate, or A-Bomb Survivor's Health Certificate.</li>
+            <li>※ Tiket hanya tersedia melalui penjualan di muka di Ticket Pia. Tidak ada tiket yang dijual pada hari acara, jadi pastikan untuk membelinya sebelumnya.</li>
+            <li>※ Pada hari acara, harap bawa Tiket Khusus yang sudah diterbitkan dan mengantre di Loket Tiket Khusus (di depan Pintu Masuk Pusat).</li>
+            <li>※ Pada hari acara, Anda wajib menunjukkan (asli) salah satu sertifikat berikut: Sertifikat Disabilitas, Sertifikat Cedera Perang, atau Sertifikat Kesehatan Korban Bom Atom.</li>
         </ul>
     </div>
 
@@ -186,7 +186,7 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    /* 4. Header "Ticket types" */
+    /* 4. Header "Jenis Tiket" */
     .ticket-type-header {
         background: linear-gradient(to right, #f7971e, #ffd200);
         border-radius: 6px;
@@ -254,7 +254,7 @@
         padding-left: 1.4em;
     }
 
-    /* 6. Header Special Tickets */
+    /* 6. Header Tiket Khusus */
     .special-tickets-header {
         font-size: 1.5rem;
         font-weight: bold;

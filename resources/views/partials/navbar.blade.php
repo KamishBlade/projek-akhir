@@ -1,5 +1,3 @@
-{{-- resources/views/overview.blade.php --}}
-
 @extends('layouts.main')
 
 @section('title', 'Overview')
@@ -7,10 +5,6 @@
 @section('content')
 
 <div class="max-w-7xl mx-auto py-12 px-6">
-
-    {{-- ================================================= --}}
-    {{-- ========= BAGIAN DARI SCREENSHOT KEDUA ========= --}}
-    {{-- ================================================= --}}
 
     {{-- 1. Bagian Theme, Period, & What is TGS --}}
     <section class="mb-12 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
@@ -89,9 +83,6 @@
         </div>
     </section>
 
-    {{-- ================================================= --}}
-    {{-- BARU: Link/Card ke Event Stage Schedule --}}
-    {{-- ================================================= --}}
     <section class="mb-10">
         <a href="{{ route('events.stage') }}" class="block p-6 bg-blue-600 rounded-xl shadow-2xl hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01] group">
             <div class="flex justify-between items-center">
@@ -109,11 +100,6 @@
             </div>
         </a>
     </section>
-
-
-    {{-- ================================================= --}}
-    {{-- ========= BAGIAN DARI FILE KODE ANDA ========= --}}
-    {{-- ================================================= --}}
 
     {{-- 3. Bar "Newly Renewed" --}}
     <div class="bg-orange-500 text-white text-center font-semibold py-3 mb-10 rounded-lg">

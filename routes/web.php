@@ -25,6 +25,20 @@ Route::get('/news', [PageController::class, 'news'])->name('news');
 
 Route::get('/business', [PageController::class, 'business'])->name('business');
 
+Route::get('/admin', [PageController::class, 'admin'])->name('admin');
+
+// Route Login (menggunakan GET untuk form, POST untuk proses)
+Route::get('login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
+Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+
+// Route Registrasi (menggunakan GET untuk form, POST untuk proses)
+Route::get('register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [App\Http\Controllers\Auth\RegisterController::class, 'register']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

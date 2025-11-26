@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'exhibitors')
+@section('title', 'Exhibitors')
 
 @section('content')
 <style>
@@ -137,70 +137,64 @@
 </head>
 <body>
 
-<!-- Breadcrumb -->
 <div class="breadcrumb">
-    Home / Exhibition
+    Beranda / Pameran
 </div>
 
-<!-- Title -->
 <div class="title-box">
-    Category / Sort List
+    Kategori / Urutkan Daftar
 </div>
 
-<!-- Category Cards -->
 <div class="category-wrapper">
     <div class="category-card c1">
-        <span>General Exhibition Area</span>
+        <span>Area Pameran Umum</span>
         <div class="arrow-btn">◀</div>
     </div>
 
     <div class="category-card c2">
-        <span>Organizer's projects</span>
+        <span>Proyek Penyelenggara</span>
     </div>
 
     <div class="category-card c3">
-        <span>Smartphone Game Area</span>
+        <span>Area Game Ponsel Pintar</span>
     </div>
 
     <div class="category-card c4">
-        <span>Gaming Hardware Area</span>
+        <span>Area Perangkat Keras Gaming</span>
     </div>
 
     <div class="category-card c5">
-        <span>Gaming Lifestyle Area</span>
+        <span>Area Gaya Hidup Gaming</span>
         <div class="arrow-btn">▶</div>
     </div>
 
     <div class="category-card c6">
-        <span>AR / VR Area</span>
+        <span>Area AR / VR</span>
     </div>
 </div>
 
-<!-- Hiragana Filter -->
 <div class="filter-wrapper">
-    <div class="filter-btn">あ</div>
-    <div class="filter-btn">か</div>
-    <div class="filter-btn">さ</div>
-    <div class="filter-btn">た</div>
-    <div class="filter-btn">な</div>
-    <div class="filter-btn">は</div>
-    <div class="filter-btn">ま</div>
-    <div class="filter-btn">や</div>
-    <div class="filter-btn">ら</div>
-    <div class="filter-btn">わ</div>
+    <div class="filter-btn">あ/A</div>
+    <div class="filter-btn">か/Ka</div>
+    <div class="filter-btn">さ/Sa</div>
+    <div class="filter-btn">た/Ta</div>
+    <div class="filter-btn">な/Na</div>
+    <div class="filter-btn">は/Ha</div>
+    <div class="filter-btn">ま/Ma</div>
+    <div class="filter-btn">や/Ya</div>
+    <div class="filter-btn">ら/Ra</div>
+    <div class="filter-btn">わ/Wa</div>
 </div>
 
-<!-- Alphabet Filter -->
 <div class="alphabet-wrapper">
     <div class="alphabet-btn">A - D</div>
     <div class="alphabet-btn">E - H</div>
     <div class="alphabet-btn">I - L</div>
     <div class="alphabet-btn">M - P</div>
     <div class="alphabet-btn">Q - T</div>
-    <div class="alphabet-btn">U - Z other</div>
+    <div class="alphabet-btn">U - Z Lainnya</div>
 </div>
 
-<!-- PDF Button -->
 <div class="pdf-btn">
     <button>PDF</button>
 </div>

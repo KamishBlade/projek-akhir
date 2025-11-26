@@ -18,9 +18,6 @@
 </head>
 <body class="bg-white text-gray-800 antialiased">
 
-    {{-- ========================================= --}}
-    {{--                 NAVBAR ATAS               --}}
-    {{-- ========================================= --}}
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-[1100px] mx-auto px-4">
             <div class="flex justify-between h-16">
@@ -48,49 +45,49 @@
     </nav>
 
     {{--
-        DATA DUMMY
+        DATA DUMMY (Nama produk dipertahankan karena merupakan nama dagang)
     --}}
     @php
         $products = [
             [
                 'name' => 'Main Visual T-Shirt Black',
                 'price' => 4800,
-                'image' => 'https://via.placeholder.com/400x400/1a1a1a/ffffff?text=Black+T-Shirt',
+                'image' => 'https://tgs.cesa.or.jp/images/goods/111_KV_Tee_blk.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
                 'name' => 'Main Visual T-Shirt White',
                 'price' => 4800,
-                'image' => 'https://via.placeholder.com/400x400/f3f3f3/333333?text=White+T-Shirt',
+                'image' => 'https://tgs.cesa.or.jp/images/goods/112_KV_Tee_wht.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
                 'name' => 'Acrylic Keychain <KV>',
                 'price' => 800,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=Keychain',
+                'image' => 'https://tgs.cesa.or.jp/images/goods/131_KV_Key.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
                 'name' => 'Can Badge <KV>',
                 'price' => 500,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=Badge',
+                'image' => 'https://tgs.cesa.or.jp/images/goods/132_KV_Badge.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
-                'name' => 'TGS 2025 Towel',
-                'price' => 2500,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=Towel',
+                'name' => 'A5 Stiker',
+                'price' => 500,
+                'image' => 'https://tgs.cesa.or.jp/images/goods/433_CW_A5sticker.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
-                'name' => 'TGS Mug Cup',
-                'price' => 1500,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=Mug',
+                'name' => 'Clear File <Color Shift>',
+                'price' => 600,
+                'image' => 'https://tgs.cesa.or.jp/images/goods/432_CW_File.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
-                'name' => 'Clear File Set',
-                'price' => 1000,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=File+Set',
+                'name' => 'Ema Wooden Plaque <いざ、冒険だ。>',
+                'price' => 2600,
+                'image' => 'https://tgs.cesa.or.jp/images/goods/441_CW_ema.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
             [
-                'name' => 'Eco Bag',
+                'name' => 'Tenugui (Hand Towel) <KV>',
                 'price' => 1200,
-                'image' => 'https://via.placeholder.com/400x400/ffffff/333333?text=Eco+Bag',
+                'image' => 'https://tgs.cesa.or.jp/images/goods/149_KV_tenugui.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
             ],
         ];
     @endphp
@@ -98,60 +95,60 @@
     {{-- KONTEN UTAMA --}}
     <div class="max-w-[1100px] mx-auto px-4 py-10">
 
-        <h1 class="text-3xl font-bold text-center mb-8">TGS Official Merchandise Shop</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Toko Cendera Mata Resmi TGS</h1>
 
         <div class="bg-gray-100 rounded-[20px] p-8 mb-12 shadow-sm border border-gray-200">
             <div class="text-sm text-gray-700 space-y-2 leading-relaxed">
                 <p>
-                    <span class="font-bold text-gray-900">Business Days:</span>
-                    Central Mall 2F &lt;in front of Hall 5&gt;, Esplanade 2F &lt;in front of Hall 9&gt;
+                    <span class="font-bold text-gray-900">Hari Bisnis:</span>
+                    Central Mall 2F &lt;depan Hall 5&gt;, Esplanade 2F &lt;depan Hall 9&gt;
                 </p>
                 <p>
-                    <span class="font-bold text-gray-900">Public Days:</span>
-                    Central Mall 2F &lt;in front of Hall 5&gt;, Exhibition Hall 10 &lt;near the Merchandise Area&gt;
+                    <span class="font-bold text-gray-900">Hari Publik:</span>
+                    Central Mall 2F &lt;depan Hall 5&gt;, Exhibition Hall 10 &lt;dekat Area Merchandise&gt;
                 </p>
                 <p class="text-xs text-gray-500 pt-2">
-                    ※In addition to cash, official goods can be purchased with various credit cards, electronic money (iD, QUICPay), and QR payments (PayPay, d-barai, au PAY, Merpay, WeChat Pay, Alipay+). Official goods are sold at the "TGS Official Goods Shop" located at the above areas.
+                    ※Selain uang tunai, barang resmi dapat dibeli dengan berbagai kartu kredit, uang elektronik (iD, QUICPay), dan pembayaran QR (PayPay, d-barai, au PAY, Merpay, WeChat Pay, Alipay+). Barang resmi dijual di "TGS Official Goods Shop" yang berlokasi di area-area di atas.
                 </p>
             </div>
 
             <div class="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-8 mt-8 font-bold text-gray-800 text-sm">
                 <a href="#" class="flex items-center gap-1 hover:opacity-70 transition">
-                    TGS Official Merchandise
+                    Cendera Mata Resmi TGS
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
                 <span class="text-gray-300 hidden md:inline">/</span>
                 <a href="#" class="flex items-center gap-1 hover:opacity-70 transition">
-                    GameTGS Collaboration Merchandise
+                    Cendera Mata Kolaborasi GameTGS
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
             </div>
         </div>
 
         <div class="bg-gradient-to-r from-[#FFAD47] via-[#FFD946] to-[#75D959] rounded-lg py-3 px-4 mb-8 text-center shadow-sm">
-            <h2 class="text-xl md:text-2xl font-bold text-black/90 tracking-wide">TGS Official Merchandise</h2>
+            <h2 class="text-xl md:text-2xl font-bold text-black/90 tracking-wide">Cendera Mata Resmi TGS</h2>
         </div>
 
         <div class="mb-12 text-sm text-gray-800 leading-7 space-y-5">
             <div>
-                <p class="font-bold">Tokyo Game Show 2025 Official Goods Available Exclusively at the Venue!</p>
-                <p>~ Featuring designs by popular illustrator Zashikiwarashi and more, with over 60 items in total ~</p>
+                <p class="font-bold">Barang Resmi Tokyo Game Show 2025 Tersedia Eksklusif di Lokasi Acara!</p>
+                <p>~ Menampilkan desain oleh ilustrator populer Zashikiwarashi dan lainnya, dengan total lebih dari 60 item ~</p>
             </div>
 
             <p>
-                The official goods of Tokyo Game Show 2025 will once again be available exclusively at the venue this year.
-                We will offer more than 60 items, including products featuring the main visual illustrated by the popular illustrator Zashikiwarashi, as well as original designs produced by the artist collective ANIMAREAL.
+                Barang resmi Tokyo Game Show 2025 sekali lagi akan tersedia secara eksklusif di lokasi acara tahun ini.
+                Kami akan menawarkan lebih dari 60 item, termasuk produk yang menampilkan visual utama yang diilustrasikan oleh ilustrator populer **Zashikiwarashi**, serta desain orisinal yang diproduksi oleh kolektif seniman **ANIMAREAL**.
             </p>
             <p>
-                In addition to a wide range of items such as T-shirts, towels, keychains, acrylic stands, and eco bags, this year’s lineup also includes new products themed around “Japanese style.” These items are not only perfect as souvenirs but also highly practical for everyday use.
+                Selain berbagai macam item seperti kaus, handuk, gantungan kunci, *acrylic stand*, dan tas eko, jajaran produk tahun ini juga mencakup produk baru bertema "gaya Jepang." Barang-barang ini tidak hanya sempurna sebagai suvenir tetapi juga sangat praktis untuk penggunaan sehari-hari.
             </p>
             <p>
-                During the exhibition, make sure to pick up and check out these items, which can only be obtained at the venue.
+                Selama pameran, pastikan untuk mengambil dan memeriksa barang-barang ini, yang hanya bisa didapatkan di lokasi acara.
             </p>
 
             <div class="text-xs text-gray-400 space-y-1 pt-2">
-                <p>※Prices include tax.</p>
-                <p>※The design and specifications of the actual product may differ slightly from those shown.</p>
+                <p>※Harga sudah termasuk pajak.</p>
+                <p>※Desain dan spesifikasi produk aktual mungkin sedikit berbeda dari yang ditampilkan.</p>
             </div>
         </div>
 

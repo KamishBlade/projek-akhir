@@ -1,15 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Event Stage') {{-- Mengubah title menjadi lebih sesuai --}}
+@section('title', 'Event Stage')
 
 @section('content')
 
-{{-- Menghapus <!DOCTYPE html>, <html>, <head>, <body> dari sini --}}
-
-    {{-- Script dan Style Kustom tetap di awal (atau pindahkan ke layout jika bisa) --}}
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        
+
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; }
 
@@ -24,61 +21,61 @@
     </style>
 {{-- <body class="bg-white text-gray-800"> dihapus --}}
 
-    {{-- DATA DUMMY UNTUK SIMULASI (Biasanya ini dari Controller) --}}
+    {{-- DATA DUMMY --}}
     @php
         $schedule = [
-            'September 25' => [
+            '25 September' => [
                 [
-                    'title' => 'Opening Ceremony',
-                    'image' => 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Opening+Ceremony',
-                    'time' => '9/25 10:00-10:30',
-                    'tags' => ['Ceremony']
+                    'title' => 'Upacara Pembukaan',
+                    'image' => 'https://tgs-system.com/storage/2025/user/17J9F7oIFeIWzm3oWrDkOvKOQWC2jII9i4ycVlG85O.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '25/9 10:00-10:30',
+                    'tags' => ['Seremoni']
                 ],
                 [
-                    'title' => 'Keynote Speech: Game Innovation',
-                    'image' => 'https://via.placeholder.com/400x225/10b981/ffffff?text=Keynote',
-                    'time' => '9/25 11:00-12:00',
+                    'title' => 'Pidato Utama: Inovasi Game',
+                    'image' => 'https://tgs-system.com/storage/2025/user/17r3hALjIJtqzruy1UoyUWqspg6LuJtkRdlD1Ewkij.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '25/9 11:00-12:00',
                     'tags' => ['Keynote']
                 ],
                 [
-                    'title' => 'AKIBA LOST: Special Stage',
-                    'image' => 'https://via.placeholder.com/400x225/8b5cf6/ffffff?text=Akiba+Lost',
-                    'time' => '9/25 13:00',
-                    'tags' => ['Show']
+                    'title' => 'AKIBA LOST: Panggung Spesial',
+                    'image' => 'https://tgs-system.com/storage/2025/admin/6Lnr5YndwMho8m993mNV9Ms8s2ikoAVrrKrZ37Mfo_resize.png?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '25/9 13:00',
+                    'tags' => ['Pertunjukan']
                 ],
                 [
-                    'title' => 'Annapurna Interactive New Release',
-                    'image' => 'https://via.placeholder.com/400x225/f59e0b/ffffff?text=Annapurna',
-                    'time' => '9/25 14:30',
-                    'tags' => ['Release']
+                    'title' => 'Rilis Baru Annapurna Interactive',
+                    'image' => 'https://tgs-system.com/storage/2025/admin/6NbxK2iY598ae8ZOji4vERh9xmMhdW6mN3nRCETTm.JPG?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '25/9 14:30',
+                    'tags' => ['Rilis']
                 ]
             ],
-            'September 26' => [
+            '26 September' => [
                  [
-                    'title' => 'Red Bull Apex Takeover with Yuki Tsunoda',
-                    'image' => 'https://via.placeholder.com/400x225/ef4444/ffffff?text=Red+Bull+Apex',
-                    'time' => '9/26 14:30',
+                    'title' => 'Red Bull Apex Takeover bersama Yuki Tsunoda',
+                    'image' => 'https://tgs-system.com/storage/2025/user/175sU61ZKXkTqCmGjB93yGOPgsJoPpYKEaKYeliGD2c_resize.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '26/9 14:30',
                     'tags' => ['Esports']
                 ]
             ],
-             'September 27' => [
+             '27 September' => [
                  [
-                    'title' => 'Top Game Creators Academy (TGCA)',
-                    'image' => 'https://via.placeholder.com/400x225/06b6d4/ffffff?text=TGCA',
-                    'time' => '9/27 11:00',
-                    'tags' => ['Education']
+                    'title' => 'Akademi Kreator Game Teratas (TGCA)',
+                    'image' => 'https://tgs-system.com/storage/2025/user/17R5utVrKJHfQotOP7w9WN1scJOM071MLZ34h7BhBp.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '27/9 11:00',
+                    'tags' => ['Edukasi']
                 ],
                  [
-                    'title' => 'Anniversary Title Producers Talk',
-                    'image' => 'https://via.placeholder.com/400x225/ec4899/ffffff?text=Producers+Talk',
-                    'time' => '9/27 13:15',
-                    'tags' => ['Talk']
+                    'title' => 'Bincang Produser Judul Anniversary',
+                    'image' => 'https://tgs-system.com/storage/2025/user/17uPtR9kTVYSFWvHd5qgyzbc3v13ClXNrZeCDnGqCK.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '27/9 13:15',
+                    'tags' => ['Talkshow']
                 ],
                  [
                     'title' => 'Red Bull 283 Academy',
-                    'image' => 'https://via.placeholder.com/400x225/ef4444/ffffff?text=RB+Academy',
-                    'time' => '9/27 14:45',
-                    'tags' => ['Academy']
+                    'image' => 'https://tgs-system.com/storage/2025/user/197RNvxtuMx9L8Z6tXkQthpkf61b6Dzdtt9LzgyjiOA.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a',
+                    'time' => '27/9 14:45',
+                    'tags' => ['Akademi']
                 ]
             ]
         ];
@@ -86,10 +83,10 @@
 
     {{-- HERO SECTION --}}
     <section class="hero-bg relative h-64 flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-white text-4xl font-bold mb-6 drop-shadow-lg">Event Stage</h1>
+        <h1 class="text-white text-4xl font-bold mb-6 drop-shadow-lg">Panggung Acara</h1>
         <div class="bg-black/80 text-white px-8 py-4 rounded-full max-w-2xl shadow-xl backdrop-blur-sm border border-gray-700">
             <p class="text-sm md:text-base font-semibold">
-                The event stage includes keynote speeches, the Japan Game Awards ceremony, sponsor sessions, and Organizer's project.
+                Panggung acara mencakup pidato utama, upacara Japan Game Awards, sesi sponsor, dan proyek Penyelenggara.
             </p>
         </div>
     </section>
@@ -101,13 +98,15 @@
         <div class="bg-gradient-to-r from-cyan-300 to-blue-500 p-1 rounded-3xl shadow-lg mb-16 mx-auto max-w-5xl">
             <div class="bg-white rounded-[20px] p-6 md:p-8 flex flex-col md:flex-row items-center gap-8">
                 <div class="w-full md:w-1/3">
-                    <img src="https://via.placeholder.com/400x250/000000/ffffff?text=Live+Stream" alt="Stage Preview" class="rounded-lg w-full object-cover shadow-md">
+                    <img src="https://tgs.cesa.or.jp/images/event/fig_overview.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a" alt="Pratinjau Panggung" class="rounded-lg w-full object-cover shadow-md">
                 </div>
                 <div class="w-full md:w-2/3">
-                    <p class="font-bold text-gray-800 mb-2">We have prepared a variety of programs for this year as well. Please wait for the official release of detailed information. The event stage will be accessible through online streaming.</p>
+                    <p class="font-bold text-gray-800 mb-2">
+                        Kami juga telah menyiapkan berbagai program untuk tahun ini. Mohon nantikan rilis resmi informasi rincinya. Panggung acara akan dapat diakses melalui streaming online.
+                    </p>
                     <div class="mt-4 text-right">
                         <button class="bg-black text-white text-xs font-bold py-2 px-6 rounded-full hover:bg-gray-800 transition">
-                            2024 stream archive ↗
+                            Arsip stream 2024 ↗
                         </button>
                     </div>
                 </div>
@@ -121,12 +120,12 @@
                     {{-- Judul Tanggal dengan Garis Vertikal Biru --}}
                     <div class="flex items-center mb-6">
                         <div class="w-1 h-6 bg-cyan-500 mr-3"></div>
-                        <h2 class="text-xl font-bold text-gray-800">{{ $date }} Event Stage</h2>
+                        <h2 class="text-xl font-bold text-gray-800">Panggung Acara {{ $date }}</h2>
                     </div>
 
                     {{-- Grid Kartu Event --}}
                     <div class="relative">
-                        {{-- Tombol Navigasi Kiri (Visual Only) --}}
+                        {{-- Tombol Navigasi Kiri (Hanya Visual) --}}
                         <button class="absolute -left-12 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-50 hidden xl:block z-10">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                         </button>
@@ -137,7 +136,7 @@
                                     {{-- Gambar Thumbnail --}}
                                     <div class="relative overflow-hidden">
                                         <img src="{{ $event['image'] }}" alt="{{ $event['title'] }}" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
-                                        {{-- Badge Kategori (Opsional) --}}
+                                        {{-- Badge Kategori --}}
                                         <div class="absolute top-2 left-2">
                                             <span class="bg-black text-white text-[10px] font-bold px-2 py-1 rounded-sm">{{ $event['tags'][0] }}</span>
                                         </div>
@@ -159,7 +158,7 @@
                             @endforeach
                         </div>
 
-                        {{-- Tombol Navigasi Kanan (Visual Only) --}}
+                        {{-- Tombol Navigasi Kanan (Hanya Visual) --}}
                         <button class="absolute -right-12 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-50 hidden xl:block z-10">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </button>
@@ -170,8 +169,7 @@
     </main>
 
     <footer class="bg-gray-900 text-white py-8 mt-20 text-center text-xs">
-        <p>&copy; 2025 Event Organizer. All rights reserved.</p>
+        <p>&copy; 2025 Event Organizer. Hak cipta dilindungi undang-undang.</p>
     </footer>
 
-{{-- </body></html> dihapus --}}
 @endsection

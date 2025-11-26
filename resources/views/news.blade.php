@@ -25,12 +25,12 @@
         $specialArticles = [
             [
                 'title' => 'SENSE OF WONDER NIGHT 2025',
-                'image' => 'https://via.placeholder.com/600x400/1a1a2e/ffffff?text=SOWN+2025',
+                'image' => 'https://service.tgs.cesa.or.jp/images/96/ffa/bbad2474a6fe9defea4f359aede6a.png',
                 'badge' => 'Pickup'
             ],
             [
                 'title' => 'Notice of the "GAME with YOU" Donation',
-                'image' => 'https://via.placeholder.com/600x400/000000/FFFF00?text=GAME+with+YOU',
+                'image' => 'https://service.tgs.cesa.or.jp/images/96/346/cd441fc2ccb84dec80b14b5b4914b.jpg',
                 'badge' => 'Pickup'
             ]
         ];
@@ -95,7 +95,7 @@
         <div>
             <div class="flex items-center gap-3 mb-6">
                 <div class="w-1 h-6 bg-orange-400"></div>
-                <h2 class="text-xl font-bold text-gray-900">News / Press Release</h2>
+                <h2 class="text-xl font-bold text-gray-900">Berita / Siaran Pers</h2>
             </div>
 
             <div class="bg-[#F0F0F0] rounded-[30px] p-6 md:p-10">
@@ -106,7 +106,7 @@
 
                         <div>
                             <span class="inline-block text-[10px] font-bold px-2 py-1 rounded mb-3 text-white
-                                {{ $news['type'] === 'Release' ? 'bg-orange-400' : 'bg-gray-500' }}">
+                                {{ $news['type'] === 'Rilis' ? 'bg-orange-400' : 'bg-gray-500' }}">
                                 {{ $news['type'] }}
                             </span>
                             <h3 class="text-[13px] font-bold text-gray-800 leading-snug line-clamp-4">

@@ -51,4 +51,19 @@ class PageController extends Controller
     {
         return view('business');
     }
+
+     public function login(): View
+    {
+        return view('login');
+    }
+
+    public function register(): View
+    {
+        return view('register');
+    }
+
+    public function admin(): View
+    {
+        return view('admin');
+    }
 }

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 {{-- Judul Halaman --}}
-@section('title', 'News')
+@section('title', 'Official Social Media')
 
 @section('content')
 
@@ -9,7 +9,7 @@
     <div class="relative w-full h-72 flex items-center justify-center text-center overflow-hidden mb-12 bg-gray-900">
         {{-- Background Pattern (Abstract) --}}
         <div class="absolute inset-0 bg-cover bg-center opacity-40"
-             style="background-image: url('https://via.placeholder.com/1920x400/222244/ffffff?text=Abstract+Pattern');">
+             style="background-image: url('https://via.placeholder.com/1920x400/222244/ffffff?text=Pola+Abstrak');">
         </div>
         {{-- Overlay Gradient --}}
         <div class="absolute inset-0 bg-gradient-to-b from-blue-900/60 to-black/80"></div>
@@ -17,7 +17,7 @@
         {{-- Teks di tengah Hero --}}
         <div class="relative z-10 max-w-2xl mx-auto bg-black/80 backdrop-blur-sm px-8 py-5 rounded-full shadow-lg border border-gray-700">
             <p class="text-white text-base md:text-lg font-semibold leading-relaxed">
-                Various exhibitors will provide information on the TGS official program during the four days from Business Day to General Public Day.
+                Berbagai peserta pameran akan memberikan informasi tentang program resmi TGS selama empat hari, mulai dari Hari Bisnis hingga Hari Publik.
             </p>
         </div>
     </div>
@@ -30,7 +30,7 @@
             {{-- Header dengan garis biru --}}
             <div class="flex items-center mb-6">
                 <div class="w-1.5 h-6 bg-blue-600 mr-3 rounded-full"></div>
-                <h2 class="text-xl font-bold text-gray-800">Streaming Information</h2>
+                <h2 class="text-xl font-bold text-gray-800">Informasi Streaming</h2>
             </div>
 
             {{-- Kotak Informasi Streaming (Gradient Border) --}}
@@ -38,15 +38,14 @@
                 <div class="bg-white rounded-[10px] p-6 md:p-8 flex flex-col lg:flex-row items-center gap-8">
                     {{-- Gambar Thumbnail --}}
                     <div class="w-full lg:w-1/3">
-                        {{-- Pastikan Anda punya gambar placeholder atau logo TGS Streaming --}}
-                        <img src="https://via.placeholder.com/400x250/111827/ffffff?text=TGS+Streaming+Program" alt="TGS Streaming Program" class="rounded-lg w-full h-auto object-cover shadow-md">
+                        <img src="{{ asset('images/streaming-logo.jpg') }}" alt="Program Streaming TGS" class="rounded-lg w-full h-auto object-cover shadow-md">
                     </div>
 
                     {{-- Teks Informasi --}}
                     <div class="w-full lg:w-2/3">
-                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Four-day program stream!</h3>
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-3">Program streaming selama empat hari!</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            The event will be streamed across eight platforms, including social media and video streaming services.
+                            Acara ini akan disiarkan di delapan platform, termasuk media sosial dan layanan streaming video.
                         </p>
                         <p class="text-sm text-gray-500 mt-4 font-mono">
                             YouTube / X (Twitter) / Niconico / Twitch / TikTok / Douyu / Bilibili / Douyin
@@ -61,7 +60,7 @@
             {{-- Header dengan garis biru --}}
             <div class="flex items-center mb-6">
                 <div class="w-1.5 h-6 bg-blue-600 mr-3 rounded-full"></div>
-                <h2 class="text-xl font-bold text-gray-800">Streaming List</h2>
+                <h2 class="text-xl font-bold text-gray-800">Daftar Streaming</h2>
             </div>
 
             {{-- Daftar Tombol Platform Streaming --}}
@@ -69,14 +68,11 @@
                 <div class="bg-white rounded-[10px] p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     @php
                         $streamingPlatforms = [
-                            ['name' => 'YouTube', 'url' => '#'],
-                            ['name' => 'X (Twitter)', 'url' => '#'],
-                            ['name' => 'Twitch', 'url' => '#'],
-                            ['name' => 'TikTok', 'url' => '#'],
-                            ['name' => 'Niconico', 'url' => '#'],
-                            ['name' => 'Bilibili', 'url' => '#'],
-                            ['name' => 'Douyu', 'url' => '#'],
-                            ['name' => 'Douyin', 'url' => '#'],
+                            ['name' => 'YouTube', 'url' => 'https://www.youtube.com/channel/UClFyIegrk4g6CFqGYCwTViA'],
+                            ['name' => 'X (Twitter)', 'url' => 'https://x.com/tokyo_game_show'],
+                            ['name' => 'Twitch', 'url' => 'https://www.twitch.tv/tokyogameshow1'],
+                            ['name' => 'TikTok', 'url' => 'https://www.tiktok.com/@tokyogameshow.official'],
+                            ['name' => 'Facebook', 'url' => 'https://www.facebook.com/tokyogameshow/'],
                         ];
                     @endphp
 

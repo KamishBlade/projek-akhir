@@ -23,27 +23,22 @@
 {{-- Saya ubah dari grid-cols-3 menjadi grid-cols-4 untuk menambahkan kartu Tiket --}}
 <section class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
 
-    {{-- INI ADALAH KARTU TIKET BARU YANG BISA DI-KLIK --}}
-    {{-- Kita gunakan tag <a> alih-alih <div> --}}
     <a href="{{ route('tickets') }}" class="block bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-xl transition border-4 border-transparent hover:border-yellow-400">
         <h3 class="text-xl font-semibold mb-2">🎟️ Beli Tiket</h3>
         <p class="text-gray-600">Lihat semua jenis tiket & amankan tempat Anda!</p>
     </a>
     {{-- ---------------------------------------------- --}}
 
-    {{-- Saya juga ubah <div> ini menjadi <a> agar bisa diklik --}}
     <a href="#" class="block bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-xl transition">
         <h3 class="text-xl font-semibold mb-2">📅 Jadwal Event</h3>
         <p class="text-gray-600">Lihat jadwal lengkap konferensi & sesi game.</p>
     </a>
 
-    {{-- Saya juga ubah <div> ini menjadi <a> agar bisa diklik --}}
     <a href="#" class="block bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-xl transition">
         <h3 class="text-xl font-semibold mb-2">🏢 Exhibitor</h3>
         <p class="text-gray-600">Temukan developer & publisher dari seluruh dunia.</p>
     </a>
 
-    {{-- Saya juga ubah <div> ini menjadi <a> agar bisa diklik --}}
     <a href="#" class="block bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-xl transition">
         <h3 class="text-xl font-semibold mb-2">🗺️ Peta Booth</h3>
         <p class="text-gray-600">Lihat posisi booth & lokasi acara.</p>
@@ -51,39 +46,48 @@
 
 </section>
 
-{{-- === BAGIAN BARU DARI SCREENSHOT DIMULAI DI SINI === --}}
 
 <div class="max-w-7xl mx-auto px-6 pb-16">
 
-    {{-- Pick Up Section (Horizontal Scroll/Carousel) --}}
     <h2 class="text-2xl font-bold mb-4">Pick Up</h2>
-    <div class="flex space-x-4 overflow-x-auto pb-4">
-        {{-- Card 1: STEAM --}}
-        <div class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center"
-             style="background-image: url('https://placehold.co/256x96/3a6b8c/FFF?text=STEAM');">
-            <span class="text-white text-lg font-bold">STEAM</span>
-        </div>
-        {{-- Card 2: Featured Exhibit --}}
-        <div class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center"
-             style="background-image: url('https://placehold.co/256x96/7a4d9c/FFF?text=Pameran+Khusus');">
-            <span class="text-white text-lg font-bold">Pameran Khusus</span>
-        </div>
-        {{-- Card 3: Japan Game Award --}}
-        <div class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center"
-             style="background-image: url('https://placehold.co/256x96/9c2e2e/FFF?text=Penghargaan+Game');">
-            <span class="text-white text-lg font-bold">Penghargaan Game</span>
-        </div>
-        {{-- Card 4: 30th Anniversary --}}
-        <div class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center"
-             style="background-image: url('https://placehold.co/256x96/f0a500/000?text=30th+Anniversary');">
-            <span class="text-black text-lg font-bold">30th Anniversary</span>
-        </div>
-        {{-- Card 5: Official Movie --}}
-        <div class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center"
-             style="background-image: url('https://placehold.co/256x96/4CAF50/FFF?text=Film+Resmi');">
-            <span class="text-white text-lg font-bold">Film Resmi</span>
-        </div>
-    </div>
+<div class="flex space-x-4 overflow-x-auto pb-4">
+
+    {{-- Card 1: STEAM --}}
+    <a href="https://store.steampowered.com/news/group/40369749/view/535485791717032623"
+       class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center transition hover:opacity-90"
+       style="background-image: url('https://service.tgs.cesa.or.jp/images/96/c96/431c0c1e772aeee3358d1d8c2f8a3.png');">
+        <span class="text-white text-lg font-bold"></span>
+    </a>
+
+    {{-- Card 2: Featured Exhibit --}}
+    <a href="https://x.com/tokyo_game_show"
+       class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center transition hover:opacity-90"
+       style="background-image: url('https://service.tgs.cesa.or.jp/images/96/f57/6325bb059cd902aa763cfd4b70570.jpg');">
+        <span class="text-white text-lg font-bold"></span>
+    </a>
+
+    {{-- Card 3: Japan Game Award --}}
+    <a href="https://awards.cesa.or.jp/"
+       class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center transition hover:opacity-90"
+       style="background-image: url('https://service.tgs.cesa.or.jp/images/96/55c/f12554146d7f89c7578dae2da7b80.png');">
+        <span class="text-white text-lg font-bold"></span>
+    </a>
+
+    {{-- Card 4: 30th Anniversary --}}
+    <a href="https://30thmascot.cesa.or.jp/"
+       class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center transition hover:opacity-90"
+       style="background-image: url('https://service.tgs.cesa.or.jp/images/96/b2f/8d7b028ad8136c8f11a90d512155a.png');">
+        <span class="text-black text-lg font-bold"></span>
+    </a>
+
+    {{-- Card 5: Official Movie --}}
+    <a href="https://www.youtube.com/watch?v=sEOyxyA7Ic8"
+       class="flex-shrink-0 w-64 h-24 bg-cover bg-center rounded-lg shadow-md p-3 flex items-end justify-center text-center transition hover:opacity-90"
+       style="background-image: url('https://service.tgs.cesa.or.jp/images/96/e86/666acfb05593cca25a662147876fd.png');">
+        <span class="text-white text-lg font-bold"></span>
+    </a>
+
+</div>
     {{-- End Pick Up Section --}}
 
     {{-- EXHIBITION Section --}}
@@ -97,7 +101,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {{-- List of exhibitors Card --}}
             <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-center space-x-4">
-                <img src="https://placehold.co/150x100/555/FFF?text=Exhibitor+List" class="w-full md:w-1/3 h-auto rounded-lg object-cover" alt="Exhibitors List">
+                <img src="https://tgs.cesa.or.jp/images/home/fig_exhibition.jpg?3f9e6eea-0d0a-46cb-90d2-73aad41e345a" class="w-full md:w-1/3 h-auto rounded-lg object-cover" alt="Exhibitors List">
                 <div class="flex-1 mt-4 md:mt-0">
                     <h3 class="text-xl font-bold mb-2">List of exhibitors</h3>
                     <p class="text-gray-600 text-sm mb-4">Game-related exhibition events galore, including hands-on experiences with new games.</p>
@@ -115,27 +119,6 @@
                 <a href="#" class="bg-blue-500/90 text-white font-semibold py-3 px-4 rounded-full text-center text-sm shadow-md hover:bg-blue-600 transition">AR/VR Area</a>
             </div>
         </div>
-
-        {{-- Indie & Online Exhibition --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            {{-- SELECTED INDIE 80 --}}
-            <div class="bg-white p-5 rounded-xl shadow-md border-l-4 border-gray-900">
-                <h4 class="font-bold text-lg mb-1 flex items-center">
-                    <span class="mr-2">🕹️</span> SELECTED INDIE 80
-                </h4>
-                <p class="text-gray-600 text-sm">Discover the next hit from indie game developers.</p>
-            </div>
-            {{-- Online Exhibition --}}
-            <div class="bg-white p-5 rounded-xl shadow-md border-l-4 border-pink-500">
-                <h4 class="font-bold text-lg mb-1 flex items-center">
-                    <span class="mr-2">🌐</span> Online Exhibition
-                </h4>
-                <p class="text-gray-600 text-sm">Special booths and events held on the event day.</p>
-            </div>
-        </div>
-    </div>
-    {{-- End EXHIBITION Section --}}
-
 
     {{-- EVENT STAGE / OFFICIAL PROGRAM Section --}}
     <div class="bg-gradient-to-r from-green-500/70 to-lime-500/70 p-8 rounded-2xl shadow-xl relative overflow-hidden">
@@ -173,32 +156,6 @@
             </div>
         </div>
     </div>
-    {{-- End EVENT STAGE / OFFICIAL PROGRAM Section --}}
-
-    {{-- Information Section (simulasi kartu informasi di bagian bawah) --}}
-    <h2 class="text-2xl font-bold mt-16 mb-4">Information</h2>
-    <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-        <a href="#" class="bg-red-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">🎟️ Tickets</h4>
-        </a>
-        <a href="#" class="bg-green-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">🚗 Access</h4>
-        </a>
-        <a href="#" class="bg-blue-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">🗺️ Map</h4>
-        </a>
-        <a href="#" class="bg-yellow-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">🍔 Foods</h4>
-        </a>
-        <a href="#" class="bg-purple-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">🛍️ Merchandise</h4>
-        </a>
-        <a href="#" class="bg-gray-100 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
-            <h4 class="font-semibold">⚠️ Caution</h4>
-        </a>
-    </div>
-
-</div>
 
 {{-- === BAGIAN BARU BERAKHIR DI SINI === --}}
 
@@ -240,21 +197,21 @@
     <h2 class="text-2xl font-bold mt-16 mb-4">Special Article</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <a href="#" class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-blue-500 block">
-            <img src="https://placehold.co/400x200/3498db/FFF?text=Article+1" class="w-full h-40 object-cover" alt="Article 1">
+            <img src="https://service.tgs.cesa.or.jp/images/96/ffa/bbad2474a6fe9defea4f359aede6a.png" class="w-full h-40 object-cover" alt="Article 1">
             <div class="p-4">
                 <h4 class="font-bold text-base mb-1">SENSE OF WONDER NIGHT 2025</h4>
                 <p class="text-xs text-gray-500">2025.09.25</p>
             </div>
         </a>
         <a href="#" class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-red-500 block">
-            <img src="https://placehold.co/400x200/e74c3c/FFF?text=Article+2" class="w-full h-40 object-cover" alt="Article 2">
+            <img src="https://service.tgs.cesa.or.jp/images/96/346/cd441fc2ccb84dec80b14b5b4914b.jpg" class="w-full h-40 object-cover" alt="Article 2">
             <div class="p-4">
                 <h4 class="font-bold text-base mb-1">Notice of the "GAME with YOU" Booth Game Show 2025</h4>
                 <p class="text-xs text-gray-500">2025.09.25</p>
             </div>
         </a>
         <a href="#" class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-yellow-500 block">
-            <img src="https://placehold.co/400x200/f1c40f/000?text=Article+3" class="w-full h-40 object-cover" alt="Article 3">
+            <img src="https://service.tgs.cesa.or.jp/images/96/adc/62b3888c66014f2c9bf74ae2c3a7c.jpg" class="w-full h-40 object-cover" alt="Article 3">
             <div class="p-4">
                 <h4 class="font-bold text-base mb-1">Red Bull Gives You Wings at the Game Show 2025</h4>
                 <p class="text-xs text-gray-500">2025.09.25</p>
