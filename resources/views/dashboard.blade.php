@@ -12,7 +12,7 @@
     <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
         <div class="text-center">
             <h1 class="text-white text-4xl md:text-6xl font-extrabold drop-shadow-lg">
-                TOKYO GAME SHOW 2026
+                TOKYO GAME SHOW 2025
             </h1>
             <p class="text-white text-xl mt-3">Unlimited, Neverending Playgrounds</p>
         </div>
@@ -20,7 +20,6 @@
 </section>
 
 {{-- Info Cards --}}
-{{-- Saya ubah dari grid-cols-3 menjadi grid-cols-4 untuk menambahkan kartu Tiket --}}
 <section class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
 
     <a href="{{ route('tickets') }}" class="block bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-xl transition border-4 border-transparent hover:border-yellow-400">
@@ -157,7 +156,6 @@
         </div>
     </div>
 
-{{-- === BAGIAN BARU BERAKHIR DI SINI === --}}
 
 
 {{-- Latest News --}}
@@ -166,7 +164,6 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        {{-- Ini juga bisa Anda ubah menjadi tag <a> jika berita bisa diklik --}}
         <a href="#" class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition block">
             <div class="h-40 bg-gray-300"></div>
             <div class="p-5">

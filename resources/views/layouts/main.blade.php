@@ -7,7 +7,6 @@
     <title>@yield('title', 'TGS 2025')</title>
     @vite('resources/css/app.css')
     <script src="https://cdn.tailwindcss.com"></script>
-    {{-- Tambahkan Alpine.js untuk fitur dismiss alert (opsional tapi disarankan) --}}
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
@@ -83,7 +82,7 @@
                     Event Stage
                 </a>
 
-                {{-- Link Lainnya --}}
+                {{-- Link Map --}}
 
                 <a href="{{ route('map') }}"
                    class="hover:text-blue-600 {{ request()->routeIs('map') ? 'text-blue-600 font-bold' : '' }}">
@@ -94,10 +93,14 @@
                    class="hover:text-blue-600 {{ request()->routeIs('exhibitors') ? 'text-blue-600 font-bold' : '' }}">
                     Exhibitors
                 </a>
-                <a href="#" class="hover:text-blue-600">Merchandise</a>
+
+                <a href="{{ route('merchandise') }}"
+                   class="hover:text-blue-600 {{ request()->routeIs('merchandise.') ? 'text-blue-600 font-bold' : '' }}">
+                    Merchandise
+                </a>
             </nav>
         </div>
-        
+
         {{-- BAGIAN 3: Breadcrumb --}}
         @if (!request()->is('/'))
             <section class="w-full bg-gradient-to-r from-green-50 via-blue-50 to-orange-50 shadow-sm">
